@@ -4,6 +4,7 @@ const nodemailer = require('nodemailer');
 const Hapi = require('hapi');
 const file = require('file-system');
 const Handlebars = require('handlebars');
+const config = require('./config.json');
 const server = new Hapi.Server({
 	port: 7777, 
 	host: '0.0.0.0'
@@ -26,8 +27,8 @@ async function sendMail(from,to,subject,html){
 const transporter = nodemailer.createTransport({
 	service: 'gmail',
 	auth: {
-		user: 'pack97@gmail.com',
-		pass: ''
+		user: config.email_user,
+		pass: config.email_pass
 	}
 });
 
@@ -81,8 +82,8 @@ const init = async () => {
 		}
 	]);
 	try{
-		await startVision();
-		await startInsert();
+		// await startVision();
+		// await startInsert();
 		await server.start();
 		console.log(`${new Date()} Server running at: ${server.info.uri}/`);
 	}catch (err) {  

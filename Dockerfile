@@ -16,7 +16,7 @@ RUN git clone https://github.com/johnkelley4477/pack97Mail.git
 WORKDIR /Pack97Mail
 
 ## Checkout develop branch
-RUN git checkout develop
+## RUN git checkout develop
 
 ## Delete GIT
 ## RUN apk del git
@@ -27,6 +27,6 @@ RUN npm install
 ## Install Nodemon (dev) 
 RUN npm install -g nodemon
 
-EXPOSE 587
+EXPOSE 7777
 
-CMD [ "nodemon", "server.js" ]
+CMD [ "nodemon", "index.js" ]
