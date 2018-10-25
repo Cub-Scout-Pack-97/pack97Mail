@@ -1,0 +1,27 @@
+{
+  "name": "pack97mail",
+  "version": "1.0.0",
+  "description": "The SMTP email server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnkelley4477/pack97Mail.git"
+  },
+  "author": "John Kelley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnkelley4477/pack97Mail/issues"
+  },
+  "homepage": "https://github.com/johnkelley4477/pack97Mail#readme",
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "handlebars": "^4.0.12",
+    "hapi": "^17.6.0",
+    "inert": "^5.1.0",
+    "nodemailer": "^4.6.8",
+    "vision": "^5.4.0"
+  }
+}
