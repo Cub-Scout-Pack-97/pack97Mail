@@ -16,7 +16,7 @@ RUN git clone https://github.com/johnkelley4477/pack97Mail.git
 WORKDIR /Pack97Mail
 
 ## Checkout develop branch
-## RUN git checkout develop
+RUN git checkout develop
 
 ## Delete GIT
 ## RUN apk del git
