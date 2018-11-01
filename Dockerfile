@@ -15,11 +15,8 @@ RUN git clone https://github.com/johnkelley4477/pack97Mail.git
 ## Create Working Dir
 WORKDIR /Pack97Mail
 
-## Checkout develop branch
-## RUN git checkout develop
-
 ## Delete GIT
-## RUN apk del git
+RUN apk del git
 
 ## Install dependances
 RUN npm install
